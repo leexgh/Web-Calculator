@@ -1,27 +1,27 @@
 <p>This is the partial for view 1.</p>
 <div class="main">
-    <input class="inputText" ng-model="textView" disabled>
+    <input class="inputText" ng-model="resultText" disabled>
     </divclass>
     <div class="buttonSet">
-        <button class="button" >1
-        <button class="button" >2
-        <button class="button">3
-        <button class="button buttonBackground" >÷</button>
+        <button class="button" ng-model="one" ng-click="numberInput('1')">1
+        <button class="button" ng-model="two" ng-click="numberInput('2')">2
+        <button class="button" ng-model="three" ng-click="numberInput('3')">3
+        <button class="button buttonBackground" ng-model="chu" ng-click="operationSymbol('÷')">÷</button>
 
-        <button class="button" >4
-        <button class="button" >5
-        <button class="button" >6
-        <button class="button buttonBackground" >×</button>
+        <button class="button" ng-model="four" ng-click="numberInput('4')">4
+        <button class="button" ng-model="five" ng-click="numberInput('5')">5
+        <button class="button" ng-model="six" ng-click="numberInput('6')">6
+        <button class="button buttonBackground" ng-model="cheng" ng-click="operationSymbol('×')">×</button>
 
+        <button class="button" ng-model="seven" ng-click="numberInput('7')">7
+        <button class="button" ng-model="eight" ng-click="numberInput('8')">8
+        <button class="button" ng-model="nine" ng-click="numberInput('9')">9
+        <button class="button buttonBackground" ng-model="jian" ng-click="operationSymbol('-')">-</button>
 
-        <button class="button" >7
-        <button class="button" >8
-        <button class="button" >9
-        <button class="button buttonBackground" >-</button>
-
-        <button class="button" >AC
-        <button class="button" >0
-        <button class="button buttonBackground" >=
-        <button class="button buttonBackground" >+</button>
+        <button class="button" ng-model="delete" ng-click="init()">AC
+        <button class="button" ng-model="zero" ng-click="numberInput('0')">0
+        <button class="button buttonBackground" ng-model="dengyu" ng-click="operationSymbol()">=
+        <button class="button buttonBackground" ng-model="jia" ng-click="operationSymbol('+')">+</button>
     </div>
+
 </div>
