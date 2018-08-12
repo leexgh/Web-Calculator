@@ -7,7 +7,7 @@ html{
 body{
   height:100%;
   width: 100%;
-  background-color: lightyellow;
+  background:url(./assets/background.jpg) ;
 }
 
 .menu {
@@ -46,18 +46,29 @@ body{
   bottom: 0;
   margin: auto;
   position:absolute;
+  min-height: 160px;
 }
 .buttonSet {
-  height:80% ;
+  height:72% ;
   width: 100%;
+  margin-left: 1.2px;
 }
 
 .button {
   text-align: center;
-  font-size: xx-large;
+  font-size: 4vmin;
   background-color: lightgrey;
   height: 25%;
   width: 25%;
+
+}
+
+.button:active {
+  background: #999999;
+
+}
+.button:focus{
+  outline:none;
 }
 
 .buttonBackground {
@@ -65,12 +76,19 @@ body{
   font-weight: normal;
   color: white;
 }
+.buttonBackground:active{
+  background: #EE7600;
+}
+
+.buttonBackground:focus{
+  outline:none;
+}
 
 .inputText {
-  width: 100%;
-  height: 20%;
+  width: 99.5%;
+  height: 28%;
   text-align: right;
   background-color: black;
   color: white;
-  font-size: xx-large;
+  font-size: 6vmin;
 }
