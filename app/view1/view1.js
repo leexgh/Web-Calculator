@@ -63,17 +63,11 @@ angular.module('myApp.view1', ['ngRoute'])
                 $scope.resultText = num1 * num2 + "";
             }
             else if ($scope.operator == "÷") {
-                if ($scope.number2 == "0"){
-                    $scope.resultText = "error";
-                    $scope.number1 = "";
-                    $scope.number2 = "";
-                    $scope.operator = "";
-                }
-                else{
-                    $scope.resultText = num1 / num2 + "";
-                }
+                $scope.resultText = num1 / num2 + "";
+            }
+            else if($scope.operator == "÷" && $scope.number2 == "0"){
+                $scope.resultText = "error";
                 return;
-
             }
             $scope.number1 = $scope.resultText;
             $scope.number2 = "";
